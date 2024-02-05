@@ -18,6 +18,7 @@ public class UserService {
 
     public Optional<User> updateuser(User user){
         Optional<User>updateuser=userRepo.saveAndFlush(user);
+        System.out.println("Hello World");
         return updateuser;
     }
 
